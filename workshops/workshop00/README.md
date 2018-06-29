@@ -28,10 +28,10 @@ The team has chosen to use LANGUAGE for FRC Robot Code.
       1. Install [LabView for FRC](http://www.ni.com/download/labview-for-frc-17.0/7185/en/).
       2. Install [CTRE Phoenix Framework](http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources).
     * C++/Java
-      1. Install Java 8 JDK.
+      1. Install [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
       2. C++ Only: Install Compiler.
       3. C++ Only: Install Toolchains.
-      4. Download Eclipse.
+      4. Download [Eclipse](http://www.eclipse.org/downloads/eclipse-packages/).
       5. Download FRC Plugins.
       6. Install [CTRE Phoenix Framework](http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources).
     * Python
