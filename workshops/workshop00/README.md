@@ -22,7 +22,7 @@ The team has chosen to use LANGUAGE for FRC Robot Code.
 ## Set up Development Environment
 1. We'll have to make sure you have git installed. Git is a source control management tool that allows you to easily make changes, track them, and undo/redo them without majorly affecting your code until you're 100% sure you want to make the change.
     * Installed by default in macOS and Linux.
-    * For Windows, we can install from [here](https://git-scm.com/download/win).
+    * [Git for Windows](https://git-scm.com/download/win).
 2. Depending on the language we've chosen, there are different steps to follow.
     * LabView
       1. Install [LabView for FRC](http://www.ni.com/download/labview-for-frc-17.0/7185/en/).
