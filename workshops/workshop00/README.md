@@ -25,15 +25,15 @@ The team has chosen to use LANGUAGE for FRC Robot Code.
     * For Windows, we can install from [here](https://git-scm.com/download/win).
 2. Depending on the language we've chosen, there are different steps to follow.
     * LabView
-      1. Install LabView for FRC.
-      2. Install CTRE Library.
+      1. Install [LabView for FRC](http://www.ni.com/download/labview-for-frc-17.0/7185/en/).
+      2. Install [CTRE Phoenix Framework Installer](http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources).
     * C++/Java
       1. Install Java 8 JDK.
       2. C++ Only: Install Compiler.
       3. C++ Only: Install Toolchains.
       4. Download Eclipse.
       5. Download FRC Plugins.
-      6. Install CTRE Library.
+      6. Install [CTRE Phoenix Framework Installer](http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources).
     * Python
       1. Install Python 3.7 (or later).
       2. Install pyfrc.
