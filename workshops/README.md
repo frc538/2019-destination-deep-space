@@ -1,6 +1,3 @@
 # Workshops
-## Workshop 00 - Setup
-* Choose a language
-* Sign up for GitHub
-* Get Text Editor
-* Set up Development Environment
+* Workshop 00 - Setup
+* Workshop 01 - Running Programs, Comments, and Printing to the Screen
