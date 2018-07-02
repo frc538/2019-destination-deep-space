@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 '''
-  File Name: printing.py
+  File Name: lesson-printing.py
   Author: Lawrence (Drew) Whisenant
   Date Created: 01 July 2018
   Date Last Modified: 01 July 2018
-  Python Version: 3.6
+  Python Version: 3.7
 '''
 
 # Topics:
