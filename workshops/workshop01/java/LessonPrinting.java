@@ -63,7 +63,7 @@ public class LessonPrinting {
   // For now, all your classes should have exactly one of these.
   // The main method should always look like: public static void main(int argc, String[] argv)
   //   followed by a set of curly braces after the last parentheses.
-  public static void main(int argc, String[] argv) {
+  public static void main(String[] args) {
     // Everything about the main method between the braces.
     
     /*
