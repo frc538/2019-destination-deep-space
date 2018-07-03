@@ -133,12 +133,12 @@ public class LessonPrinting {
     // printf can only take strings, but the strings can have numbers inside them.
 
     // You can learn more about System.out.print() from the documentation.
-    // https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#print(java.lang.String)
+    // https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#print(java.lang.String)
     
     // You can learn more about System.out.println() from the documentation.
-    // https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println()
+    // https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#println()
     
     // You can learn more about System.out.printf() from the documentation.
-    // https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#printf(java.lang.String,%20java.lang.Object...)    
+    // https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html#printf(java.lang.String,%20java.lang.Object...)    
   }
 }
