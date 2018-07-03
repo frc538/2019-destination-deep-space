@@ -73,12 +73,72 @@ public class LessonPrinting {
       This is one way you have to get information about what your program 
         as it runs.
 
-      In Java, this done with a set of methods (or functions) called "print" and "println".
+      In Java, this done with a set of methods (or functions) called "print," "println," and "printf".
       A method (or function) is some code that you can run by knowing what it's called
         without knowing (possibly) what it does or how it does it.
     */
     
-    // Simply put, print and println take some information and write it to the screen.
+    // Simply put, the prints take some information and write it to the screen.
+    // print and printf can print information to the screen, and println does the same thing, but it also ends the line.
+    // Uncomment each line to see the difference
+    // System.out.print(538);
+    // System.out.println(538);
+    
+    // The print methods "live" in something called out, which lives inside something called System.
+    // Notice that each line of code ends with a semicolon.
+    // In Java, you run a command or instruction, called a statement, and end it with a semicolon
+    //   like how you can end a thought with a period, exclamation point, or question mark.
+    
+    // You can call println with no arguments to print a single blank line to the screen.
+    // System.out.println();
+    
+    // These lines print a number with a decimal in it on the screen.
+    // System.out.print(3.14159);
+    // System.out.println(3.14159);
+    
+    // In programming, we generally refer to text data as a string.
+    // A string is written as "string."
+    
+    // This line prints my name.
+    // System.out.print("Drew");
+    
+    // So do these.
+    // System.out.println("Drew");
+    // System.out.printf("Drew");
+    
+    // Again, notice that only println starts a new line.
+    
+    // This line prints a string with quotes.
+    // System.out.println("A quote looks like this:\"");
+    
+    // This line prints an apostrophe.
+    // System.out.println("An apostrophe looks like this:\'");
+    
+    // We generally call ' a single quote and " a double quote.
+    
+    // The back slashes indicate a special character.
+    // A single quote: \'
+    // A double quote: \"
+    // A tab: \t
+    // A new line: \n
+    // The backslash is a signal to say "I don't really want the next letter, I want a special character."
+    
+    // You can use \n to get the same behavior for print, printf, and println.
+    // System.out.print("This ends with a new line!\n");
+    // System.out.printf("This ends with a new line!\n");
+    // System.out.println("This ends with a new line!");
+    
+    // print and println can take any kind of argument:
+    //   strings, numbers, etc.
+    // printf can only take strings, but the strings can have numbers inside them.
 
+    // You can learn more about System.out.print() from the documentation.
+    // https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#print(java.lang.String)
+    
+    // You can learn more about System.out.println() from the documentation.
+    // https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println()
+    
+    // You can learn more about System.out.printf() from the documentation.
+    // https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#printf(java.lang.String,%20java.lang.Object...)    
   }
 }
