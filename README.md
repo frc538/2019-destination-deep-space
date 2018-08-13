@@ -1,2 +1,2 @@
-# frc-538-programming
-Repo For FRC Team 538 Programming Workshops and Robot Code
+# FRC 538 Programming
+This repo contains robot code and code from workshops used by FRC 538.
