@@ -1,5 +1,7 @@
 # FRC Robot Code
 
+To run robot code, you'll need the robotpy libraries (and any required third party libraries) installed.
+
 The robot code is organized in the following manner.
 
 - robot.py
