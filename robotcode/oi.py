@@ -1,3 +1,2 @@
-class OI:
-  def __init__(self):
-    pass
+def init():
+  pass
