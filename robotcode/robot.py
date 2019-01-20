@@ -1,9 +1,9 @@
 from wpilib import TimedRobot
 from wpilib import run
 from wpilib.command import Scheduler
-from oi import OI
 
 import robotsubsystems
+import oi
 
 class Robot(TimedRobot):
   """
@@ -15,7 +15,7 @@ class Robot(TimedRobot):
     This function is run when the robot is first started up and should be 
     used for any initialization code.
     """
-    self.oi = OI()
+    oi.init()
     robotsubsystems.init()
   
   def robotPeriodic(self):
