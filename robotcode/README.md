@@ -11,7 +11,7 @@ The robot code is organized in the following manner.
   - Only contains constants.
   - Constant values that are accessible to avoid magic numbers.
   - Include things like button maps and CAN/PWM IDs here.
-- subsystems.py
+- robotsubsystems.py
   - Handles creating the subsystems that have been defined.
   - Gives commands and the robot access to the subsystems.
 - oi.py
