@@ -11,4 +11,8 @@ class LiftSubsystem(Subsystem):
     
     def toggleFront(self):
         self.frontLift.set(not self.frontLift.get())
+
+
+    def toggleRear(self):
+        self.rearLift.set(not self.rearLift.get())
     
