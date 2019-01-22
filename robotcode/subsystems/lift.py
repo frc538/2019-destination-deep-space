@@ -7,4 +7,8 @@ class LiftSubsystem(Subsystem):
         super().__init__('LiftSubsystem')
         self.frontLift = Solenoid(robotmap.FRONT_LIFT_SOLENOID_PCM_PORT)
         self.rearLift = Solenoid(robotmap.BACK_LIFT_SOLENOID_PCM_PORT)
+
+    
+    def toggleFront(self):
+        self.frontLift.set(not self.frontLift.get())
     
