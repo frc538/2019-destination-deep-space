@@ -1,10 +1,10 @@
 from wpilib.command import Command
-from robotsubsystems import lift
+import robotsubsystems
 
 class ToggleRearCommand(Command):
     def __init__(self):
         super().__init__('ToggleRearCommmand')
-        self.requires(lift)
+        self.requires(robotsubsystems.lift)
 
     
     def initialize(self):
@@ -12,7 +12,7 @@ class ToggleRearCommand(Command):
 
 
     def execute(self):
-        lift.toggleRear()
+        robotsubsystems.lift.toggleRear()
 
 
     def isFinished(self):
