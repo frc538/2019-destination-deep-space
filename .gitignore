@@ -1,2 +1,3 @@
 .DS_Store
 **_pycache__**
+src/.deploy_cfg
