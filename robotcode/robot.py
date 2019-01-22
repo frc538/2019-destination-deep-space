@@ -1,6 +1,9 @@
 from wpilib import TimedRobot
 from wpilib import run
 from wpilib.command import Scheduler
+from wpilib import PowerDistributionPanel
+from wpilib import Compressor
+from robotcode import robotmap
 
 import robotsubsystems
 import oi
@@ -17,6 +20,10 @@ class Robot(TimedRobot):
     """
     oi.init()
     robotsubsystems.init()
+    self.pdp = PowerDistributionPanel(robotmap.CAN_PDP_ID)
+    self.compressor = Compressor()
+    self.compressor.setClosedLoopControl(True)
+
   
   def robotPeriodic(self):
     """

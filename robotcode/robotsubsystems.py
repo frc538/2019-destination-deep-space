@@ -1,2 +1,7 @@
+from robotcode.subsystems.lift import LiftSubsystem
+
+lift = None
+
 def init():
-    pass
+    global lift
+    lift = LiftSubsystem()
