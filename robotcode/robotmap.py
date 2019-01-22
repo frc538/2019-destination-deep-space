@@ -1,0 +1,2 @@
+CAN_PCM_ID = 0
+CAN_PDP_ID = 0
