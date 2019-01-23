@@ -18,7 +18,7 @@ class TiltHatchCommand(Command):
 
 
     def isFinished(self):
-        return True
+        return False
 
 
     def end(self):

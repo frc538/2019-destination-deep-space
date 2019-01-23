@@ -31,9 +31,6 @@ class HatchSubsystem(Subsystem):
             self.angleMotor.set(speed)
 
 
-        self.angleMotor.set(speed)
-
-
     def toggleLauncher(self):
         # This function extends/retracts the poker
         if self.hatchLauncher.get() is DoubleSolenoid.Value.kForward:
