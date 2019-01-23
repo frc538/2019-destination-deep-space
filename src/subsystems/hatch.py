@@ -2,11 +2,13 @@ from wpilib.command import Subsystem
 from ctre.wpi_victorspx import WPI_VictorSPX
 from wpilib.doublesolenoid import DoubleSolenoid
 from wpilib.digitalinput import DigitalInput
+from commands.hatch.tilt import TiltHatchCommand
 import robotmap
 
 class HatchSubsystem(Subsystem):
     def __init__(self):
         # Anything the subsystem has goes here
+        super().__init__("HatchSubsystem")
         self.angleMotor = WPI_VictorSPX(robotmap.CAN_VICTOR_HATCH_ANGLE)
         self.hatchLauncher = DoubleSolenoid(robotmap.HATCH_LAUNCHER_OPEN_PCM_PORT, robotmap.HATCH_LAUNCHER_CLOSE_PCM_PORT)
         self.hatchLauncher.set(DoubleSolenoid.Value.kReverse)
@@ -16,7 +18,7 @@ class HatchSubsystem(Subsystem):
     
     def initDefaultCommand(self):
         # This is where the command to do if nothing else happens goes
-        pass
+        self.setDefaultCommand(TiltHatchCommand())
 
     
     def tilt(self, speed):
