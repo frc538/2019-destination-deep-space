@@ -2,6 +2,7 @@ from wpilib.xboxcontroller import XboxController
 from wpilib.buttons import JoystickButton
 from commands.lift.togglefront import ToggleFrontCommand
 from commands.lift.togglerear import ToggleRearCommand
+from commands.hatch.togglelauncher import ToggleLauncherCommand
 import robotmap
 
 driverOne = None
@@ -18,4 +19,7 @@ def init():
 
   toggleRear = JoystickButton(driverTwo, robotmap.BUTTON_LEFT_BUMPER)
   toggleRear.whenReleased(ToggleRearCommand())
+
+  toggleLauncher = JoystickButton(driverTwo, robotmap.BUTTON_A)
+  toggleLauncher.whenReleased(ToggleLauncherCommand())
     
