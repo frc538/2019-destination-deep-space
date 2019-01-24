@@ -1,6 +1,7 @@
 from wpilib.command import Subsystem
 from ctre.wpi_victorspx import WPI_VictorSPX
 from wpilib.drive import MecanumDrive
+from commands.drive.mecanumdrive import MecanumDriveCommand
 import robotmap
 
 class DriveSubsystem(Subsystem):
@@ -13,5 +14,10 @@ class DriveSubsystem(Subsystem):
 
         self.mecanum = MecanumDrive(self.frontLeft, self.rearLeft, self.frontRight, self.rearRight)
 
-    def drive(self, mag, angle, zRot):
-        self.mecanum.drivePolar(mag, angle, zRot)
+
+    def initDefaultCommand(self):
+        self.setDefaultCommand(MecanumDriveCommand())
+
+
+    def drive(self, robotRightSpeed, robotForwardSpeed, robotClockwiseSpeed):
+        self.mecanum.driveCartesian(robotRightSpeed, robotForwardSpeed, robotClockwiseSpeed)

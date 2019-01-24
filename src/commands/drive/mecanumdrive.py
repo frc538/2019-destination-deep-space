@@ -15,15 +15,18 @@ class MecanumDriveCommand(Command):
         
     
     def execute(self):
-        speed = math.sqrt(oi.driverOne.getRawAxis(robotmap.AXIS_LEFT_X)**2 + oi.driverOne.getRawAxis(robotmap.AXIS_LEFT_Y)**2)
-        robotsubsystems.drive.drive()        
+        robotsubsystems.drive.drive(
+            oi.driverOne.getRawAxis(robotmap.AXIS_LEFT_X), 
+            -oi.driverOne.getRawAxis(robotmap.AXIS_LEFT_Y), 
+            0)        
     
+
     def isFinished(self):
         return True
         
         
     def end(self):
-        robotsubsystems.drive.drive(0, 0, 0)
+        pass
         
         
     def interrupted(self):
