@@ -17,5 +17,4 @@ def init():
   toggleFront.whenReleased(ToggleFrontCommand())
 
   toggleRear = JoystickButton(driverTwo, robotmap.BUTTON_LEFT_BUMPER)
-  toggleRear.whenReleased(ToggleRearCommand())
-    
+  toggleRear.whenReleased(ToggleRearCommand())    
