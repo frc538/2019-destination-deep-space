@@ -1,10 +1,10 @@
 from wpilib.command import Command
 import robotsubsystems
 
-class ToggleFrontCommand(Command):
+class LaunchHatchCommand(Command):
   def __init__(self):
-    super().__init__('ToggleFrontCommand')
-    self.requires(robotsubsystems.lift)
+    super().__init__('LaunchHatchCommand')
+    self.requires(robotsubsystems.hatch)
   
   
   def initialize(self):
@@ -12,7 +12,7 @@ class ToggleFrontCommand(Command):
   
   
   def execute(self):
-    robotsubsystems.lift.toggleFront()
+    robotsubsystems.hatch.releaseHatch()
   
   
   def isFinished(self):
