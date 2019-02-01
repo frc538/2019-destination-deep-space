@@ -21,9 +21,7 @@ class HatchSubsystem(Subsystem):
     
     def tilt(self, speed):
         # This function lets the mechanism tilt
-        self.angleMotor.set(speed)
-        print("Position: " + self.angleEncoder.getPosition())
-        print("Velocity: " + self.angleEncoder.getVelocity())
+        self.angleMotor.set(0.25 * speed)
 
 
     def releaseHatch(self):
