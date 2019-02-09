@@ -17,10 +17,10 @@ class Robot(TimedRobot):
     This function is run when the robot is first started up and should be 
     used for any initialization code.
     """
-    robotsubsystems.init()
-    oi.init()
     self.compressor = Compressor()
     self.compressor.setClosedLoopControl(True)
+    robotsubsystems.init()
+    oi.init()
 
   
   def robotPeriodic(self):
