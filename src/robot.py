@@ -1,6 +1,7 @@
 from wpilib import TimedRobot
 from wpilib import run
 from wpilib.command import Scheduler
+from wpilib import Compressor
 
 import robotmap
 import robotsubsystems
@@ -16,6 +17,8 @@ class Robot(TimedRobot):
     This function is run when the robot is first started up and should be 
     used for any initialization code.
     """
+    self.compressor = Compressor()
+    self.compressor.setClosedLoopControl(True)
     robotsubsystems.init()
     oi.init()
 
