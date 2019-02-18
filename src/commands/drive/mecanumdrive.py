@@ -18,7 +18,7 @@ class MecanumDriveCommand(Command):
         robotsubsystems.drive.drive(
             oi.driverOne.getRawAxis(robotmap.AXIS_LEFT_X), 
             -oi.driverOne.getRawAxis(robotmap.AXIS_LEFT_Y), 
-            0)        
+            oi.driverOne.getRawAxis(robotmap.AXIS_RIGHT_TRIGGER) - oi.driverOne.getRawAxis(robotmap.AXIS_LEFT_TRIGGER))        
     
 
     def isFinished(self):

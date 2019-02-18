@@ -21,7 +21,7 @@ class HatchSubsystem(Subsystem):
     
     def tilt(self, speed):
         # This function lets the mechanism tilt
-        self.angleMotor.set(0.25 * speed)
+        self.angleMotor.set(robotmap.HATCH_ARM_SPEED_REDUCTION * speed)
 
 
     def releaseHatch(self):

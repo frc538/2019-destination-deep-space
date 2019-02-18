@@ -1,5 +1,7 @@
 from wpilib.command import Command
 import robotsubsystems
+import robotmap
+import oi
 
 class SpinCommand(Command):
     def __init__(self):
@@ -12,7 +14,7 @@ class SpinCommand(Command):
 
     
     def execute(self):
-        robotsubsystems.cargo.spin()
+        robotsubsystems.cargo.spin(oi.driverOne.getRawButton(robotmap.BUTTON_A))
 
 
     def isFinished(self):
