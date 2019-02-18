@@ -18,7 +18,6 @@ class Robot(TimedRobot):
     This function is run when the robot is first started up and should be 
     used for any initialization code.
     """
-    self.pdp = PowerDistributionPanel()
     self.compressor = Compressor()
     self.compressor.setClosedLoopControl(True)
     robotsubsystems.init()
@@ -91,6 +90,7 @@ class Robot(TimedRobot):
     This method is not called during competition.
     You can put test code in here that is tested from driver station.
     """
+    self.pdp = PowerDistributionPanel(0)
     self.pdp.clearStickyFaults()
     self.compressor.clearAllPCMStickyFaults()
 
