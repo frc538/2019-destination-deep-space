@@ -8,8 +8,7 @@ class HatchSubsystem(Subsystem):
     def __init__(self):
         # Anything the subsystem has goes here
         super().__init__("HatchSubsystem")
-        self.angleMotor = CANSparkMax(robotmap.CAN_REV_HATCH_ANGLE, MotorType.kBrushless)
-        self.angleEncoder = self.angleMotor.getEncoder()
+        self.angleMotor = CANSparkMax(robotmap.CAN_REV_HATCH_ANGLE, MotorType.kBrushed)
         self.hatchLauncher = Solenoid(robotmap.HATCH_LAUNCHER_PCM_PORT)
         self.hatchLauncher.set(False)
 

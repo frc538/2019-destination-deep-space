@@ -14,7 +14,7 @@ class SpinCommand(Command):
 
     
     def execute(self):
-        robotsubsystems.cargo.spin(oi.driverOne.getRawButton(robotmap.BUTTON_A))
+        robotsubsystems.cargo.spin(oi.driverTwo.getRawButton(robotmap.BUTTON_Y))
 
 
     def isFinished(self):
