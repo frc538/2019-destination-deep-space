@@ -2,6 +2,7 @@ from wpilib import TimedRobot
 from wpilib import run
 from wpilib.command import Scheduler
 from wpilib import Compressor
+from wpilib import PowerDistributionPanel
 
 import robotmap
 import robotsubsystems
@@ -89,7 +90,9 @@ class Robot(TimedRobot):
     This method is not called during competition.
     You can put test code in here that is tested from driver station.
     """
-    pass
+    self.pdp = PowerDistributionPanel(0)
+    self.pdp.clearStickyFaults()
+    self.compressor.clearAllPCMStickyFaults()
 
    
 
